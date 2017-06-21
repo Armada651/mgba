@@ -27,9 +27,7 @@ endif()
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-find_package(Qt5Multimedia)
-find_package(Qt5OpenGL)
-find_package(Qt5Widgets)
+find_package(Qt5 COMPONENTS Multimedia OpenGL Widgets LinguistTools)
 
 if(NOT BUILD_GL AND NOT BUILD_GLES2)
 	message(WARNING "OpenGL is recommended to build the Qt port")
@@ -218,7 +216,6 @@ if(NOT WIN32 AND NOT APPLE)
 	list(APPEND QT_DEFINES DATADIR="${DATADIR}")
 endif()
 
-find_package(Qt5LinguistTools)
 if(Qt5LinguistTools_FOUND)
 	set(TRANSLATION_FILES)
 	set(TRANSLATION_QRC "${CMAKE_CURRENT_BINARY_DIR}/ts.qrc")
