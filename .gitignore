@@ -1,5 +1,7 @@
 /build
+/.vs
 *.user*
 *~
 *.swp
 *.pyc
+CMakeSettings.json
