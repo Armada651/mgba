@@ -14,8 +14,8 @@ CXX_GUARD_START
 #include <mgba/internal/gba/gba.h>
 #include <mgba/internal/gb/serialize.h>
 
-extern const uint32_t GBA_SAVESTATE_MAGIC;
-extern const uint32_t GBA_SAVESTATE_VERSION;
+M_API const uint32_t GBA_SAVESTATE_MAGIC;
+M_API const uint32_t GBA_SAVESTATE_VERSION;
 
 mLOG_DECLARE_CATEGORY(GBA_STATE);
 

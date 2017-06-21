@@ -6,20 +6,18 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include <mgba-util/common.h>
 
-extern const char* const gitCommit;
-extern const char* const gitCommitShort;
-extern const char* const gitBranch;
-extern const int gitRevision;
-extern const char* const binaryName;
-extern const char* const projectName;
-extern const char* const projectVersion;
+CXX_GUARD_START
 
-#ifdef __cplusplus
-}
-#endif
+M_API const char* const gitCommit;
+M_API const char* const gitCommitShort;
+M_API const char* const gitBranch;
+M_API const int gitRevision;
+M_API const char* const binaryName;
+M_API const char* const projectName;
+M_API const char* const projectVersion;
+
+CXX_GUARD_END
 
 #endif

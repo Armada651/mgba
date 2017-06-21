@@ -21,9 +21,9 @@ CXX_GUARD_START
 #include <mgba/internal/gb/timer.h>
 #include <mgba/internal/gb/video.h>
 
-extern const uint32_t DMG_LR35902_FREQUENCY;
-extern const uint32_t CGB_LR35902_FREQUENCY;
-extern const uint32_t SGB_LR35902_FREQUENCY;
+M_API const uint32_t DMG_LR35902_FREQUENCY;
+M_API const uint32_t CGB_LR35902_FREQUENCY;
+M_API const uint32_t SGB_LR35902_FREQUENCY;
 
 mLOG_DECLARE_CATEGORY(GB);
 

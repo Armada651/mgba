@@ -15,7 +15,7 @@ CXX_GUARD_START
 
 mLOG_DECLARE_CATEGORY(DEBUGGER);
 
-extern const uint32_t DEBUGGER_ID;
+M_API const uint32_t DEBUGGER_ID;
 
 enum mDebuggerType {
 	DEBUGGER_NONE = 0,

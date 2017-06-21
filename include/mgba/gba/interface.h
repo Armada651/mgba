@@ -26,7 +26,7 @@ struct GBAAudio;
 struct GBASIO;
 struct GBAVideoRenderer;
 
-extern const int GBA_LUX_LEVELS[10];
+M_API const int GBA_LUX_LEVELS[10];
 
 enum {
 	mPERIPH_GBA_LUMINANCE = 0x1000

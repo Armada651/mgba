@@ -18,8 +18,8 @@ mLOG_DECLARE_CATEGORY(GBA_AUDIO);
 
 struct GBADMA;
 
-extern const unsigned GBA_AUDIO_SAMPLES;
-extern const int GBA_AUDIO_VOLUME_MAX;
+M_API const unsigned GBA_AUDIO_SAMPLES;
+M_API const int GBA_AUDIO_VOLUME_MAX;
 
 struct GBAAudioFIFO {
 	struct CircleBuffer fifo;

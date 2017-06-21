@@ -30,6 +30,16 @@ CXX_GUARD_START
 #include <string.h>
 #include <time.h>
 
+#if defined(_MSC_VER) && defined(BUILD_SHARED)
+#ifdef BUILD_LIBRARY
+#define M_API extern __declspec(dllexport)
+#else
+#define M_API extern __declspec(dllimport)
+#endif
+#else
+#define M_API extern
+#endif
+
 #ifdef _WIN32
 // WinSock2 gets very angry if it's included too late
 #include <winsock2.h>

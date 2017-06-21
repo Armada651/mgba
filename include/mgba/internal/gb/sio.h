@@ -16,7 +16,7 @@ CXX_GUARD_START
 
 #define MAX_GBS 2
 
-extern const int GBSIOCyclesPerTransfer[2];
+M_API const int GBSIOCyclesPerTransfer[2];
 
 mLOG_DECLARE_CATEGORY(GB_SIO);
 

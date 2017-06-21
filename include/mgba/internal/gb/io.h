@@ -107,7 +107,7 @@ enum GBIORegisters {
 	REG_MAX = 0x100
 };
 
-extern const char* const GBIORegisterNames[];
+M_API const char* const GBIORegisterNames[];
 
 struct GB;
 void GBIOInit(struct GB* gb);

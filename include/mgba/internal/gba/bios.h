@@ -19,8 +19,8 @@ void GBASwi16(struct ARMCore* cpu, int immediate);
 void GBASwi32(struct ARMCore* cpu, int immediate);
 
 uint32_t GBAChecksum(uint32_t* memory, size_t size);
-extern const uint32_t GBA_BIOS_CHECKSUM;
-extern const uint32_t GBA_DS_BIOS_CHECKSUM;
+M_API const uint32_t GBA_BIOS_CHECKSUM;
+M_API const uint32_t GBA_DS_BIOS_CHECKSUM;
 
 CXX_GUARD_END
 

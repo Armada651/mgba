@@ -15,7 +15,7 @@ CXX_GUARD_START
 
 #define MAX_GBAS 4
 
-extern const int GBASIOCyclesPerTransfer[4][MAX_GBAS];
+M_API const int GBASIOCyclesPerTransfer[4][MAX_GBAS];
 
 mLOG_DECLARE_CATEGORY(GBA_SIO);
 
